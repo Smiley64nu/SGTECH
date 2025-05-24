@@ -1,0 +1,187 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background: #ffffff; /* เปลี่ยนเป็นพื้นหลังสีขาว */
+    color: #333333; /* เปลี่ยนเป็นสีข้อความสีเข้ม */
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd; /* เส้นแบ่งด้านล่าง */
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left h1 {
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+
+nav ul {
+    display: flex;
+    background: #f9f9f9; /* พื้นหลังเมนูเป็นสีขาว */
+    list-style-type: none;
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* เส้นแบ่งด้านล่าง */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #333333; /* เปลี่ยนสีข้อความเป็นสีเข้ม */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+.dropdown-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.dropdown-container label {
+    margin-right: 10px;
+    color: #333333; /* เปลี่ยนสีข้อความ */
+}
+
+.dropdown-container select {
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    background: #ffffff; /* พื้นหลังสีขาว */
+    color: #333333; /* สีข้อความ */
+}
+
+/* สไตล์สำหรับปุ่ม Select และ Submit */
+.action-button {
+    background: #4CAF50; /* สีเขียว */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* สไตล์สำหรับปุ่มเมื่อ hover */
+.action-button:hover {
+    background: #45a049; /* สีเขียวเข้มเมื่อ hover */
+}
+
+.table-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff; /* พื้นหลังสีขาว */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    color: #333333; /* สีข้อความ */
+}
+
+table th:nth-child(1),
+table td:nth-child(1) {
+    width: 40%;
+}
+
+table th:nth-child(2),
+table td:nth-child(2) {
+    width: 40%;
+}
+
+table th:nth-child(3),
+table td:nth-child(3) {
+    width: 30%;
+}
+
+table th {
+    background: #f1f1f1; /* พื้นหลังหัวตารางสีเทาอ่อน */
+    color: #333333; /* สีข้อความ */
+}
+
+/* ขยายช่อง input ให้มีความกว้างเท่ากัน */
+table td input.value-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background: #ffffff; /* พื้นหลังสีขาว */
+    color: #333333; /* สีข้อความ */
+}
+
+.content-section {
+    display: none;
+}
+
+/* แสดงเนื้อหาของ content-section เมื่อเปิดใช้งาน */
+.content-section.active {
+    display: block;
+}
+
+/* กำหนดขนาดของคอนเทนเนอร์ที่ห่อหุ้มกราฟ */
+.graph-container {
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff; /* สีพื้นหลัง */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ปรับขนาดของ canvas ให้พอดีกับคอนเทนเนอร์ */
+.graph-container canvas {
+    width: 100%;
+    height: 100%;
+}
+
+.metrics-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #ffffff; /* พื้นหลังสีขาว */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.date-range-container label {
+    color: #333333; /* สีข้อความ */
+}

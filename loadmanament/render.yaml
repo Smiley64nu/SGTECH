@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: flask-backend
+    env: python
+    plan: free                # ระบุว่าใช้ Free Plan
+    buildCommand: "pip install -r Backend/requirements.txt"
+    startCommand: "python Backend/app.py"
+    envVars:
+      - key: MONGO_URI
+        value: "mongodb://localhost:27017/mydatabase"
